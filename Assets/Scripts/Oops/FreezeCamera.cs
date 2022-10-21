@@ -13,7 +13,7 @@ public class FreezeCamera : MonoBehaviour
         cameraObj.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D collider)
     {
         cameraObj.transform.SetParent(player.transform);
         cameraObj.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
