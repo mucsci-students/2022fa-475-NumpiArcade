@@ -191,7 +191,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 63972391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28765aae3835e6445a3c244af1843182, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb5b641cf1066d43a1fbd63775f02a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1444818546}
@@ -1124,7 +1124,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 41d63c2dbcfcb234aad82748e2dc0811, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6db5f88a66f22e646b2664f483acdfdf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b03c01a5efc619141aa423c872802a87, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3203,7 +3203,7 @@ GameObject:
   - component: {fileID: 1511840795}
   - component: {fileID: 1511840794}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Bario
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
