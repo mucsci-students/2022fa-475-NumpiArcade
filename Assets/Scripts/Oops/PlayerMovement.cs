@@ -8,8 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
-    public Vector3 pos = new Vector3(0.0f, -3.0f, -10.0f);
-
+    public Vector3 respawnPos = new Vector3(0.0f, -3.0f, -10.0f);
+    public Vector3 currentPos = new Vector3(0.0f, -3.0f, -10.0f);
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public Sprite deadSprite;
@@ -17,22 +17,24 @@ public class PlayerMovement : MonoBehaviour
     public GameObject music;
     public AudioSource deathSound;
     public AudioSource jumpSound;
+    public AudioSource pipeSound;
     public bool jumped = false;
     public bool isGrounded = false;
     public bool isAlive = true;
     public bool coroutine = true;
+    public bool inAnimation = false;
 
     [SerializeField] private Rigidbody2D rb;
 
     void Start()
     {
         spriteRenderer.sprite = null;
-        transform.position = pos;
+        transform.position = respawnPos;
     }
 
     void Update()
     {
-        if(isAlive)
+        if(isAlive && !inAnimation)
         {
             horizontal = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
@@ -59,20 +61,20 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("jumping", false);
             }
 
-            if(Input.GetKey(KeyCode.W))
+            if(Input.GetKey(KeyCode.R))
             {
                 isAlive = false;
             }
 
-            pos = transform.position;
+            currentPos = transform.position;
             cameraObj.transform.position = new Vector3(cameraObj.transform.position.x, 0.0f, cameraObj.transform.position.z);
             
             Jump();
             Flip();
         }
-        else
+        else if(!isAlive)
         {
-            transform.position = pos;
+            transform.position = currentPos;
             animator.SetBool("dead", true);
             music.GetComponent<AudioSource>().Stop();
             if(coroutine)
@@ -89,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             jumped = true;
             jumpSound.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            StartCoroutine(Jumped(0.8f));
+            StartCoroutine(Jumped(0.6f));
         }
     }
 
@@ -102,6 +104,18 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+    
+    public void DeathPipe()
+    {
+        inAnimation = true;
+        animator.SetBool("idle", false);
+        animator.SetBool("walking", false);
+        animator.SetBool("jumping", false);
+        animator.SetBool("piping", true);
+        music.GetComponent<AudioSource>().Stop();
+        pipeSound.Play();
+        StartCoroutine(DeathPipe(3.0f));
     }
 
     IEnumerator Respawn(float delayTime)
@@ -120,16 +134,30 @@ public class PlayerMovement : MonoBehaviour
         }
         
         animator.SetBool("dead", false);
-        transform.position = new Vector3(0.0f, -3.0f, -10.0f);
         music.GetComponent<AudioSource>().Play();
         isAlive = true;
         coroutine = true;
+        StartCoroutine(ResetPosition(1.0f));
     }
 
     IEnumerator Jumped(float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        
         jumped = false;
+    }
+
+    IEnumerator DeathPipe(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        animator.SetBool("piping", false);
+        isAlive = false;
+    }
+
+    IEnumerator ResetPosition(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        transform.position = respawnPos;
+        transform.Find("Sprite").transform.position = new Vector3(0.0f, -3.0f, 0.0f);
+        inAnimation = false;
     }
 }
