@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CoinBoxHitbox : MonoBehaviour
 {
+    public GameObject player;
     public int coins = 0;
 
     void Update()
@@ -11,6 +12,12 @@ public class CoinBoxHitbox : MonoBehaviour
         if(coins >= 10)
         {
             transform.Find("CoinText").gameObject.SetActive(true);
+        }
+
+        if(!player.GetComponent<PlayerMovement>().isAlive)
+        {
+            coins = 0;
+            transform.Find("CoinText").gameObject.SetActive(false);
         }
     }
 
