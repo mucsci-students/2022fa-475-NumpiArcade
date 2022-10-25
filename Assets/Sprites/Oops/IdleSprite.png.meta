@@ -160,14 +160,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      c8cb88f1ea7ee2d_35: -1127165276
+      c8cb88f1ea7ee2d_22: -1530462204
       c8cb88f1ea7ee2d_7: -1599130909
       c8cb88f1ea7ee2d_19: 1851460364
       c8cb88f1ea7ee2d_24: -906859187
       c8cb88f1ea7ee2d_28: -221640471
       c8cb88f1ea7ee2d_26: -1140842156
       IdleSprite: 1967575418
-      c8cb88f1ea7ee2d_12: 1730935965
+      c8cb88f1ea7ee2d_35: -1127165276
       c8cb88f1ea7ee2d_15: -1035597146
       c8cb88f1ea7ee2d_9: 1478127395
       c8cb88f1ea7ee2d_18: 113179138
@@ -199,7 +199,7 @@ TextureImporter:
       c8cb88f1ea7ee2d_25: 2040759862
       c8cb88f1ea7ee2d_33: -1949127730
       c8cb88f1ea7ee2d_1: -1986375915
-      c8cb88f1ea7ee2d_22: -1530462204
+      c8cb88f1ea7ee2d_12: 1730935965
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -9,7 +9,7 @@ public class DeathPipe : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if(Input.GetKey(KeyCode.A) && !triggered)
+        if((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && !triggered)
         {
             triggered = true;
             player.GetComponent<PlayerMovement>().inAnimation = true;
