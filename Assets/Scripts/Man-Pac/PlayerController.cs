@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     private float speed = 5f;
     [SerializeField] private Rigidbody2D rb;
 
-    private bool isFacingUp = true;
-    private bool isFacingRight = false;
+    // private bool isFacingUp = true;
+    // private bool isFacingRight = false;
     public Animator animator;
     
 
