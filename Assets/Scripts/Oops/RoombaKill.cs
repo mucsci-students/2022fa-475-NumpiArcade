@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeHitbox : MonoBehaviour
+public class RoombaKill : MonoBehaviour
 {
     public GameObject player;
-    public SpriteRenderer Spikes;
     public bool triggered = true;
 
     void Update()
@@ -16,7 +15,7 @@ public class SpikeHitbox : MonoBehaviour
             {
                 triggered = false;
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
-                StartCoroutine(SpikeDisappear(5.0f));
+                StartCoroutine(ResetRoomba(5.0f));
             }
         }
     }
@@ -26,14 +25,12 @@ public class SpikeHitbox : MonoBehaviour
         if(collider.tag == "Player")
         {
             player.GetComponent<PlayerMovement>().isAlive = false;
-            Spikes.enabled = true;
         }
     }
 
-    IEnumerator SpikeDisappear(float delayTime)
+    IEnumerator ResetRoomba(float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        Spikes.enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         triggered = true;
     }
