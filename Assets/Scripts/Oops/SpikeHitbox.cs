@@ -23,11 +23,8 @@ public class SpikeHitbox : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.tag == "Player")
-        {
-            player.GetComponent<PlayerMovement>().isAlive = false;
-            Spikes.enabled = true;
-        }
+        player.GetComponent<PlayerMovement>().isAlive = false;
+        Spikes.enabled = true;
     }
 
     IEnumerator SpikeDisappear(float delayTime)
