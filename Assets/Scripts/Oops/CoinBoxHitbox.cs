@@ -25,7 +25,7 @@ public class CoinBoxHitbox : MonoBehaviour
     {
         transform.Find("Coin").gameObject.SetActive(true);
         GetComponent<AudioSource>().Play();
-        coins = coins + 1;
+        coins += 1;
         StartCoroutine(ToggleCoin(0.2f));
     }
 
