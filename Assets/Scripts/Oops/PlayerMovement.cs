@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private Rigidbody2D rb;
     private float horizontal;
     private float speed = 8f;
     private float jumpingPower = 16f;
@@ -23,14 +24,6 @@ public class PlayerMovement : MonoBehaviour
     public bool isAlive = true;
     public bool coroutine = true;
     public bool inAnimation = false;
-
-    [SerializeField] private Rigidbody2D rb;
-
-    void Start()
-    {
-        spriteRenderer.sprite = null;
-        transform.position = respawnPos;
-    }
 
     void Update()
     {
