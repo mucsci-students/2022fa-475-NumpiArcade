@@ -23,6 +23,18 @@ public class GameManager : MonoBehaviour
     private int playerScore;
     private int aiScore;
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            playerScore = 0;
+            playerText.GetComponent<TextMeshProUGUI>().text = playerScore.ToString();
+            aiScore = 0;
+            aiText.GetComponent<TextMeshProUGUI>().text = aiScore.ToString();
+            ResetPosition();
+        }
+    }
+
     public void PlayerScored()
     {
         playerScore++;
@@ -39,8 +51,8 @@ public class GameManager : MonoBehaviour
 
     public void ResetPosition()
     {
-        ball.GetComponent<PingBall>().Reset();
-        playerPaddle.GetComponent<PingPlayer>().Reset();
-        aiPaddle.GetComponent<PingPlayer>().Reset();
+        ball.GetComponent<Ball>().ResetBall();
+        playerPaddle.GetComponent<Player>().ResetPaddle();
+        aiPaddle.GetComponent<AI>().ResetPaddle();
     }
 }
