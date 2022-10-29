@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PingGoal : MonoBehaviour
+public class Goal : MonoBehaviour
 {
     public bool isPlayerGoal;
 
