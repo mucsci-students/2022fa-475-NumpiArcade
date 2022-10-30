@@ -640,7 +640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6094581765677473005}
   m_Layer: 0
-  m_Name: coinsixrow
+  m_Name: dont use
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

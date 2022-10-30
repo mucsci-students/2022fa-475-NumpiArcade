@@ -8,45 +8,41 @@ public class PlayerController : MonoBehaviour
     private float speed = 5f;
     [SerializeField] private Rigidbody2D rb;
 
-    // private bool isFacingUp = true;
-    // private bool isFacingRight = false;
     public Animator animator;
+
+    public int lives = 3;
+    public bool isAlive = true;
     
 
     void Start()
     {
-
     }
 
     void Update()
     {
-
+            if (isAlive){
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
+            }
     }
+
+
     void FixedUpdate(){
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-    private void Flipy()
-    {
-        // if(isFacingUp && vertical < 0f || !isFacingUp && vertical > 0f)
-        // {
-        //     isFacingUp = !isFacingUp;
-        //     Vector3 localScale = transform.localScale;
-        //     localScale.y *= -1f;
-        //     transform.localScale = localScale;
-        // }
-        // if(isFacingRight && horizontal < 0f || !isFacingUp && horizontal > 0f)
-        // {
-        //     isFacingRight = !isFacingRight;
-        //     Vector3 localScale = transform.localScale;
-        //     localScale.x *= -.1f;
-        //     transform.localScale = localScale;
-        // }
+        void OnTriggerEnter2D(Collider2D other) 
+        { 
+        if(other.tag == "enemy" ){
+            isAlive = false;
+            Debug.Log("diee");
+            animator.Play("death");
+
+        }
     }
+
 }
