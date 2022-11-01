@@ -342,6 +342,7 @@ MonoBehaviour:
   secondLife: {fileID: 797059716}
   thirdLife: {fileID: 1871029390}
   deaths: 0
+  init: {x: 0, y: -8}
 --- !u!50 &347867316
 Rigidbody2D:
   serializedVersion: 4

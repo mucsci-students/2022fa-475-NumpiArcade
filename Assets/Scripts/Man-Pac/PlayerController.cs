@@ -22,78 +22,79 @@ public class PlayerController : MonoBehaviour
     
     public int deaths = 0;
 
-    void Start()
-    {
-        if(lives < 3) {thirdLife.SetActive(false);}
-        if(lives < 2) {secondLife.SetActive(false);}
-        if(lives < 1) {firstLife.SetActive(false);}
-
-        DontDestroyOnLoad(this);
-        
-    }
+    public Vector2 init;
 
     void Update()
     {
-            if (isAlive){
+        if (isAlive)
+        {
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
             animator.SetFloat("Speed", movement.sqrMagnitude);
-            }
-
-            score.SetText("Score : " + CoinCollect.score.ToString());
-
-
+        }
+        score.SetText("Score : " + CoinCollect.score.ToString());
+        if(lives == 0)
+        {
+            StartCoroutine(waiter2(1.5f));
+        }
     }
 
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-        void OnTriggerEnter2D(Collider2D other) 
-        { 
-        if(other.tag == "enemy" ){
+    void OnTriggerEnter2D(Collider2D other) 
+    { 
+        if(other.tag == "enemy" )
+        {
             isAlive = false;
-            Debug.Log("diee");
             animator.Play("death");
             onDeath();
-            waiter();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+            if (!isAlive)
+            {
+                StartCoroutine(waiter(1.5f));
+            }
         }
     }
     
-
-    public void onDeath(){
+    public void onDeath()
+    {
         lives -= 1;
-        deaths +=1;
+        deaths += 1;
 
         switch (deaths)
         {
             case 1:
-                firstLife.SetActive(false);
+                thirdLife.SetActive(false);
                 break;
             case 2:
                 secondLife.SetActive(false);
                 break;
             case 3:
-                thirdLife.SetActive(false);
-                // Time.timeScale = 0;
+                firstLife.SetActive(false);
                 break;
             default:
                 break;
         }
-        
-
     }
 
-    IEnumerator waiter()
-{
-    yield return new WaitForSeconds(3);
-    
-}
+    IEnumerator waiter(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        rb.position = init;
+        isAlive = true;
+        animator.Play("cons");
+    }
 
+    IEnumerator waiter2(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        Time.timeScale = 0;
+        rb.position = init;
+    }
 }
