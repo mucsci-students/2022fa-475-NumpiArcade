@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
-    public int lives = 3;
+    public static int lives = 3;
     public bool isAlive = true;
     public TMP_Text score;
 
