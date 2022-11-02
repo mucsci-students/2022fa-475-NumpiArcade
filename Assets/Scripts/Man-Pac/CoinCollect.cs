@@ -8,6 +8,7 @@ public class CoinCollect : MonoBehaviour
     public GameObject collidedWith;
     public int winCondition;
     public static int score = 0;
+    
 
         void OnTriggerEnter2D(Collider2D coin) 
         { 

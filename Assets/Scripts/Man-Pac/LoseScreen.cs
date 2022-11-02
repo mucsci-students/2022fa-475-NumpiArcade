@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+
 public class LoseScreen : MonoBehaviour
 {
     public GameObject LosingScreen;
-    public TMP_Text Score;
-    public TMP_Text HiScore;
+    public TMP_Text ScoreEnd;
+    public TMP_Text HiScoreEnd;
+
+    public int highscore = 0;
 
     void Start()
     {
@@ -18,12 +21,18 @@ public class LoseScreen : MonoBehaviour
     void Update()
     {
         if (PlayerController.lives == 0){
-            LosingScreen.SetActive(true);
-            Score.SetText("Score : " + CoinCollect.score.ToString());
 
-            // if(CoinCollect.score > HiScore){  convert highscore to int somehow
-            //     HiScore.SetText(CoinCollect.score.ToString());
-            // }
+            LosingScreen.SetActive(true);
+            ScoreEnd.SetText(CoinCollect.score.ToString());
+            highscore = PlayerPrefs.GetInt("highscore");
+            HiScoreEnd.SetText(highscore.ToString());
+            
+
+            if(CoinCollect.score > PlayerPrefs.GetInt("highscore")){
+                PlayerPrefs.SetInt("highscore", CoinCollect.score);
+                highscore = CoinCollect.score;
+                HiScoreEnd.SetText(highscore.ToString());
+            }
         }
         
     }
