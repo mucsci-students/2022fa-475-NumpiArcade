@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public GameObject player;
     Vector2 movement;
     private float speed = 5f;
     [SerializeField] private Rigidbody2D rb;
 
     public Animator animator;
 
+    public int deaths = 0;
     public static int lives = 3;
     public static bool isAlive = true;
     public TMP_Text score;
@@ -19,8 +22,9 @@ public class PlayerController : MonoBehaviour
     public GameObject firstLife;
     public GameObject secondLife;
     public GameObject thirdLife;
-    
-    public int deaths = 0;
+
+    public AudioSource die;
+    public AudioSource coingrab;
 
     public Vector2 init;
 
@@ -50,6 +54,9 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     { 
+        if(other.tag == "coin"){
+            coingrab.Play();
+        }
         if(other.tag == "enemy" )
         {
             isAlive = false;
@@ -66,6 +73,8 @@ public class PlayerController : MonoBehaviour
     {
         lives -= 1;
         deaths += 1;
+        die.Play();
+
 
         switch (deaths)
         {
