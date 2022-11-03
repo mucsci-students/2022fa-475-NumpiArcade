@@ -181,6 +181,7 @@ MonoBehaviour:
   thirdLife: {fileID: 1871029390}
   die: {fileID: 1992063488}
   coingrab: {fileID: 1631872945}
+  constant: {fileID: 580231451}
   init: {x: 0, y: -8}
 --- !u!50 &347867316
 Rigidbody2D:
@@ -320,6 +321,11 @@ BoxCollider2D:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4168621397778718946, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
   m_PrefabInstance: {fileID: 4168621397632467116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &580231451 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 76088431020207949, guid: 07dadf9dde4217246a31dfc8ff888b69, type: 3}
+  m_PrefabInstance: {fileID: 1255179440983205089}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &640376646
 PrefabInstance:
@@ -6140,6 +6146,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4168621397081492965, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4168621397250024506, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -6206,7 +6216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4168621398036640841, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4168621398259726201, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingOrder
@@ -6230,7 +6240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4168621398942124153, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4168621398942124153, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingLayerID
@@ -6242,7 +6252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4168621399018584409, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c85135c2e3e76a44fb7b8dc4c342ca0b, type: 3}
