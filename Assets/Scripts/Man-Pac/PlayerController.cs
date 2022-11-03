@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public GameObject player;
     Vector2 movement;
     private float speed = 5f;
     [SerializeField] private Rigidbody2D rb;
@@ -25,8 +23,15 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource die;
     public AudioSource coingrab;
+    public AudioSource constant;
+    
 
     public Vector2 init;
+
+
+    void start(){
+        // constant = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -86,6 +91,8 @@ public class PlayerController : MonoBehaviour
                 break;
             case 3:
                 firstLife.SetActive(false);
+                constant.Stop();
+                
                 break;
             default:
                 break;
