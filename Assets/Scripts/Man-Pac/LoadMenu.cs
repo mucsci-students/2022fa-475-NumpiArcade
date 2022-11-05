@@ -14,7 +14,8 @@ public class LoadMenu : MonoBehaviour
         CoinCollect.collected = 0;
         Time.timeScale = 1;
         PlayerController.isAlive = true;
-        PlayerController.lives = 3;
+        keeps.lives = 3;
+        keeps.deaths = 0;
         
 
     }

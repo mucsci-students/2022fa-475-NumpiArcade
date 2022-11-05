@@ -20,7 +20,7 @@ public class LoseScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerController.lives == 0){
+        if (keeps.lives == 0){
 
             LosingScreen.SetActive(true);
             ScoreEnd.SetText(CoinCollect.score.ToString());
