@@ -25,6 +25,7 @@ public class GameManager1S : MonoBehaviour
 
     public void win(){
         if(CoinCollect.collected == winCondition){
+            keeps.Score = CoinCollect.score;
             Debug.Log("we got a winner");
             SceneManager.LoadScene(toLoad);
         }

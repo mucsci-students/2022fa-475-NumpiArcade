@@ -4037,6 +4037,10 @@ PrefabInstance:
       value: gameManager
       objectReference: {fileID: 0}
     - target: {fileID: 620701846200028052, guid: e9a43b223e746eb4e92c9bcef50ad7cd, type: 3}
+      propertyPath: toLoad
+      value: MPStage4
+      objectReference: {fileID: 0}
+    - target: {fileID: 620701846200028052, guid: e9a43b223e746eb4e92c9bcef50ad7cd, type: 3}
       propertyPath: winCondition
       value: 56
       objectReference: {fileID: 0}
@@ -5009,8 +5013,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1550610577}
-  rb: {fileID: 1347661368}
-  init: {x: 0, y: -7}
 --- !u!195 &1347661366
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5033,11 +5035,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 3
---- !u!50 &1347661368 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 1468354360549763818, guid: 228ede6ac49590040a12dc018f97fdae, type: 3}
-  m_PrefabInstance: {fileID: 1347661363}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1347661372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1468354360549763817, guid: 228ede6ac49590040a12dc018f97fdae, type: 3}
@@ -5375,8 +5372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1550610577}
-  rb: {fileID: 1468249260}
-  init: {x: -14, y: 0}
 --- !u!195 &1468249258
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5399,11 +5394,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 3
---- !u!50 &1468249260 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4247655885667679449, guid: bfb91b57e86580f459b066e43d321fc2, type: 3}
-  m_PrefabInstance: {fileID: 1468249255}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1468249264 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4247655885667679447, guid: bfb91b57e86580f459b066e43d321fc2, type: 3}
@@ -5881,8 +5871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1550610577}
-  rb: {fileID: 1578744203}
-  init: {x: 14, y: 0}
 --- !u!195 &1578744201
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5905,11 +5893,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!50 &1578744203 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4247655885667679449, guid: bfb91b57e86580f459b066e43d321fc2, type: 3}
-  m_PrefabInstance: {fileID: 1578744198}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1578744207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4247655885667679447, guid: bfb91b57e86580f459b066e43d321fc2, type: 3}
@@ -6790,8 +6773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1550610577}
-  rb: {fileID: 1870965672}
-  init: {x: 0, y: 7}
 --- !u!195 &1870965670
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6814,11 +6795,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!50 &1870965672 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 8972143759806649771, guid: 2789dc85a06cc6549948d076d62d62ed, type: 3}
-  m_PrefabInstance: {fileID: 1870965667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1870965676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8972143759806649768, guid: 2789dc85a06cc6549948d076d62d62ed, type: 3}

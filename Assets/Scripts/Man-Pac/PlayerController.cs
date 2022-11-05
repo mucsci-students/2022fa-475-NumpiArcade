@@ -28,9 +28,11 @@ public class PlayerController : MonoBehaviour
     public int deaths;
     public int lives;
 
+    
+
 
     void Awake(){
-
+        CoinCollect.score = keeps.Score;
         deaths = keeps.deaths;
         lives = keeps.lives;
         Debug.Log(lives + "a");
@@ -114,6 +116,7 @@ public class PlayerController : MonoBehaviour
         // rb.position = init;
         isAlive = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
         // animator.Play("cons");
     }
 
