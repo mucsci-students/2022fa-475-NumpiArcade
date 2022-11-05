@@ -13332,7 +13332,6 @@ TextureImporter:
       NicePng_sans-sprite-png_8228828_125: 2106225878
       NicePng_sans-sprite-png_8228828_396: 1177003626
       NicePng_sans-sprite-png_8228828_330: -1091299709
-      NicePng_sans-sprite-png_8228828_59: 811395724
       NicePng_sans-sprite-png_8228828_1: -280861775
       NicePng_sans-sprite-png_8228828_433: 1533308332
       NicePng_sans-sprite-png_8228828_602: -1947221386
@@ -13362,6 +13361,7 @@ TextureImporter:
       NicePng_sans-sprite-png_8228828_199: -716033869
       NicePng_sans-sprite-png_8228828_608: -2145273915
       NicePng_sans-sprite-png_8228828_603: 1616040326
+      NicePng_sans-sprite-png_8228828_585: -1431783848
       NicePng_sans-sprite-png_8228828_176: 1471377940
       NicePng_sans-sprite-png_8228828_463: 728403891
       NicePng_sans-sprite-png_8228828_279: 947609037
@@ -13950,11 +13950,11 @@ TextureImporter:
       NicePng_sans-sprite-png_8228828_483: 180229573
       NicePng_sans-sprite-png_8228828_501: 650704881
       NicePng_sans-sprite-png_8228828_515: -2082156835
-      NicePng_sans-sprite-png_8228828_536: -1994517427
-      NicePng_sans-sprite-png_8228828_512: 152290929
-      NicePng_sans-sprite-png_8228828_76: 925698972
       NicePng_sans-sprite-png_8228828_511: -1512829949
-      NicePng_sans-sprite-png_8228828_585: -1431783848
+      NicePng_sans-sprite-png_8228828_59: 811395724
+      NicePng_sans-sprite-png_8228828_512: 152290929
+      NicePng_sans-sprite-png_8228828_536: -1994517427
+      NicePng_sans-sprite-png_8228828_76: 925698972
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

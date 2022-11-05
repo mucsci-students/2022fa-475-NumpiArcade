@@ -19,7 +19,7 @@ public class CameraRising : MonoBehaviour
     }
 
     IEnumerator risingScreen(){
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(10f);
             transform.Translate(0f,speed*Time.deltaTime, 0f);
         // if (transform.position.y >= upperY){
         //     transform.position = scene;
