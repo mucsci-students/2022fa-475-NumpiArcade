@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager1S : MonoBehaviour
 {
     public int winCondition = 0;
-    private int coins;
+
     public string toLoad ="";
 
     // Start is called before the first frame update
@@ -20,13 +20,14 @@ public class GameManager1S : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coins = CoinCollect.collected;
+        Debug.Log(CoinCollect.collected);
         win();
     }
 
     public void win(){
-        if(coins == winCondition){
-            Debug.Log("we got a winner");
+        if(CoinCollect.collected == winCondition){
+            keeps.Score = CoinCollect.score;
+            CoinCollect.collected = 0;
             SceneManager.LoadScene(toLoad);
         }
     }

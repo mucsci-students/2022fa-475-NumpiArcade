@@ -21,6 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MPStage1.unity
     guid: 5df499df2a492864fbe4a5a4669b8e5e
   - enabled: 1
-    path: Assets/Scenes/OopsArea1.unity
-    guid: 7b5fc93188649264cae656c2bcbca678
+    path: Assets/Scenes/MPStage2.unity
+    guid: 6dd216721794bd249af211c8c68684db
+  - enabled: 1
+    path: Assets/Scenes/MPStage3.unity
+    guid: 4c632d202efedc84e8083234be74afe7
+  - enabled: 1
+    path: Assets/Scenes/MPStage4.unity
+    guid: 6202bf7a465e9af4ba770cbbe52fb525
+  - enabled: 1
+    path: Assets/Scenes/MPStage5.unity
+    guid: 87af6c7844fb9224187ead90c29fbbf9
   m_configObjects: {}
