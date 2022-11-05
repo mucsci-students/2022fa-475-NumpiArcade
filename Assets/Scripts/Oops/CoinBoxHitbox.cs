@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CoinBoxHitbox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
+    public TextMeshProUGUI coinText;
     public int coins = 0;
 
     void Update()
@@ -14,11 +17,12 @@ public class CoinBoxHitbox : MonoBehaviour
             transform.Find("CoinText").gameObject.SetActive(true);
         }
 
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             coins = 0;
             transform.Find("CoinText").gameObject.SetActive(false);
         }
+        coinText.SetText(coins.ToString());
     }
 
     void OnTriggerEnter2D(Collider2D collider)

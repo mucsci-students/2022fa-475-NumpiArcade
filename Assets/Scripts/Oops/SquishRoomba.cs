@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SquishRoomba : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public GameObject hitbox1;
     public GameObject hitbox2;
     public GameObject wall;
@@ -14,7 +15,7 @@ public class SquishRoomba : MonoBehaviour
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {

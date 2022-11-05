@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RemoveWall2 : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public GameObject wall2;
     public GameObject wall3;
     public bool triggered = true;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {

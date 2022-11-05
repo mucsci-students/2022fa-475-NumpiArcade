@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class RoombaKill : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public bool triggered = true;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {
@@ -24,7 +25,14 @@ public class RoombaKill : MonoBehaviour
     {
         if(collider.tag == "Player")
         {
-            player.GetComponent<PlayerMovement>().isAlive = false;
+            if(bario.GetComponent<PlayerMovement>().active)
+            {
+                bario.GetComponent<PlayerMovement>().isAlive = false;
+            }
+            else
+            {
+                ruigi.GetComponent<PlayerMovement>().isAlive = false;
+            }
         }
     }
 

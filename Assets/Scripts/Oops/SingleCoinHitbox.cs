@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SingleCoinHitbox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public GameObject coinCounter;
     public bool triggered = false;
     public SpriteRenderer block;
@@ -13,7 +14,7 @@ public class SingleCoinHitbox : MonoBehaviour
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             transform.Find("CoinText").gameObject.SetActive(false);
             triggered = false;
