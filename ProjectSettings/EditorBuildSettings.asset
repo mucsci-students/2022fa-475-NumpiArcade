@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9c52573f30f925d4aa1e338bd9d38ad2
   - enabled: 1
-    path: Assets/Scenes/Ping.unity
+    path: Assets/Scenes/PingLevel1.unity
     guid: 5e1dbea47d78d1d4baca8cf153796e8a
   - enabled: 1
-    path: Assets/Scenes/OopsArea1.unity
-    guid: 7b5fc93188649264cae656c2bcbca678
+    path: Assets/Scenes/PingLevel2.unity
+    guid: 878fbe4de9b72924cbf518014cafcf02
+  - enabled: 1
+    path: Assets/Scenes/PingLevel3.unity
+    guid: 4324c748da5864e41ba24d47d289e203
   - enabled: 1
     path: Assets/Scenes/MPStage1.unity
     guid: 5df499df2a492864fbe4a5a4669b8e5e
+  - enabled: 1
+    path: Assets/Scenes/OopsArea1.unity
+    guid: 7b5fc93188649264cae656c2bcbca678
   m_configObjects: {}

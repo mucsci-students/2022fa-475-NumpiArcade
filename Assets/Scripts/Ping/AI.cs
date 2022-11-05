@@ -10,6 +10,8 @@ public class AI : MonoBehaviour
     public Rigidbody2D ballTracker;
     // Speed of the paddle
     public float speed = 7f;
+    // Collision sound
+    public AudioSource sound;
 
     // Tracks ball and moves AI paddle accordingly
     void FixedUpdate()
@@ -38,6 +40,14 @@ public class AI : MonoBehaviour
             {
                 paddle.AddForce(Vector2.down * speed);
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            sound.Play();
         }
     }
 

@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public Vector2 movement;
     // Speed of the paddles
     public float speed = 10f;
+    // Collision sound
+    public AudioSource sound;
     
     // Handles movement of the player's paddle
     void Update()
@@ -38,6 +40,14 @@ public class Player : MonoBehaviour
         if (movement.sqrMagnitude != 0)
         {
             paddle.AddForce(movement * speed);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            sound.Play();
         }
     }
 
