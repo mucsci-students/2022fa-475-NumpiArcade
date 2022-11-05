@@ -103,6 +103,7 @@ public class PlayerController : MonoBehaviour
     {
         keeps.lives -= 1;
         keeps.deaths += 1;
+        CoinCollect.collected = 0;
         Debug.Log("current "+keeps.lives);
         Debug.Log("current "+keeps.deaths);
         die.Play();
