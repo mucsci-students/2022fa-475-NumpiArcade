@@ -3,7 +3,10 @@ guid: e632c8adb9fb93e40b3647bf7e4b04a2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - paddle: {instanceID: 0}
+  - ballTracker: {instanceID: 0}
+  - sound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
