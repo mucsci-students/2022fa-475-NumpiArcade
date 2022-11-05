@@ -12,6 +12,7 @@ public class LoadMenu : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
         CoinCollect.score = 0;
         CoinCollect.collected = 0;
+        keeps.Score = 0;
         Time.timeScale = 1;
         PlayerController.isAlive = true;
         keeps.lives = 3;

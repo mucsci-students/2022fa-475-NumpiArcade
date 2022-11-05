@@ -20,13 +20,14 @@ public class GameManager1S : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(CoinCollect.collected);
         win();
     }
 
     public void win(){
         if(CoinCollect.collected == winCondition){
             keeps.Score = CoinCollect.score;
-            Debug.Log("we got a winner");
+            CoinCollect.collected = 0;
             SceneManager.LoadScene(toLoad);
         }
     }

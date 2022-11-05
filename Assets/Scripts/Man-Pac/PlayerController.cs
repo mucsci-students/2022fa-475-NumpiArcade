@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        
         if (isAlive)
         {
             movement.x = Input.GetAxisRaw("Horizontal");
