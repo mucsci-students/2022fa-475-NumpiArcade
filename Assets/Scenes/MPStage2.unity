@@ -6506,7 +6506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ee0c4318579f5478b107e86792eb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 922534791}
+  rb: {fileID: 1949144629}
   init: {x: -18.5, y: 9}
 --- !u!60 &1949144628
 PolygonCollider2D:
@@ -6540,6 +6540,11 @@ PolygonCollider2D:
       - {x: 0.625, y: -0.5}
       - {x: 0.625, y: -0.03125}
       - {x: 0.46875, y: 0.21875}
+--- !u!50 &1949144629 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1468354360549763818, guid: 228ede6ac49590040a12dc018f97fdae, type: 3}
+  m_PrefabInstance: {fileID: 2141111716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2127946196
 GameObject:
   m_ObjectHideFlags: 0
