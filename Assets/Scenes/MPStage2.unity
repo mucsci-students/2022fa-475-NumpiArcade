@@ -1075,6 +1075,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4703128887633978359, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703128888162014512, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4703128889067034125, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
       propertyPath: ScoreEnd
       value: 
@@ -1134,6 +1142,10 @@ PrefabInstance:
     - target: {fileID: 4703128889067034127, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
       propertyPath: m_Name
       value: scoreboard 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703128889235462970, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0264dba4a065dc346b97d22497f2d048, type: 3}
@@ -1320,7 +1332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 636610527}
-  init: {x: 14, y: -2}
+  playerdie: 0
+  init: {x: 11.7, y: -5}
 --- !u!60 &636610532
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4922,7 +4935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 922534791}
-  init: {x: -18, y: -2}
+  playerdie: 0
+  init: {x: 14.7, y: -5}
 --- !u!60 &922534796
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5039,7 +5053,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 952800394}
-  init: {x: -2, y: 4}
+  playerdie: 0
+  init: {x: 0.2, y: 1}
 --- !u!60 &952800399
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5512,7 +5527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1316796623}
-  init: {x: 13.6, y: 8}
+  playerdie: 0
+  init: {x: 15.8, y: 5}
 --- !u!60 &1316796628
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5568,7 +5584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1366209764}
-  init: {x: 11, y: 3}
+  playerdie: 0
+  init: {x: 13.3, y: 0}
 --- !u!60 &1366209769
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5690,7 +5707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1459145674}
-  init: {x: 0, y: 6.7}
+  playerdie: 0
+  init: {x: 2.2, y: 3.7}
 --- !u!60 &1459145679
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5872,7 +5890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1616257895}
-  init: {x: -4.5, y: 6.8}
+  playerdie: 0
+  init: {x: -2.3, y: 3.8}
 --- !u!60 &1616257900
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5928,7 +5947,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1643980815}
-  init: {x: -15.5, y: 3}
+  playerdie: 0
+  init: {x: 12.2, y: 0}
 --- !u!60 &1643980820
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6507,7 +6527,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1949144629}
-  init: {x: -18.5, y: 9}
+  playerdie: 0
+  init: {x: -16.2, y: 6}
 --- !u!60 &1949144628
 PolygonCollider2D:
   m_ObjectHideFlags: 0

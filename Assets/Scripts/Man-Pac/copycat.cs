@@ -18,6 +18,9 @@ public class copycat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!PlayerController.isAlive){
+            rb.position = init;
+        }
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -30,11 +33,19 @@ public class copycat : MonoBehaviour
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
-     void OnTriggerEnter2D(Collider2D other) 
-    { 
-        if(other.tag == "Player" )
-        {
+    //  void OnTriggerEnter2D(Collider2D other) 
+    // { 
+    //     if(other.tag == "Player" )
+    //     {
+    //         Pl
+    //         // Time.timeScale = 0;
+    //         // StartCoroutine(deathwait());
+    //     }
+    // }
 
-        }
-    }
+    // IEnumerator deathwait(){
+    //     yield return new WaitForSeconds(1f);
+    //     Time.timeScale = 1;
+    //     playerdie = false;
+    // }
 }
