@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class FreezeCamera : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public GameObject cameraObj;
+    public Vector3 pos;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         cameraObj.transform.parent = null;
-        cameraObj.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
+        cameraObj.transform.position = pos;
     }
 
     void OnTriggerExit2D(Collider2D collider)
     {
-        cameraObj.transform.SetParent(player.transform);
-        cameraObj.transform.position = new Vector3(0.0f, 0.0f, -10.0f);
+        if(bario.GetComponent<PlayerMovement>().active)
+        {
+            cameraObj.transform.SetParent(bario.transform);
+            cameraObj.transform.position = new Vector3(bario.transform.position.x, pos.y, pos.z);
+        }
+        else
+        {
+            cameraObj.transform.SetParent(ruigi.transform);
+            cameraObj.transform.position = new Vector3(ruigi.transform.position.x, pos.y, pos.z);
+        }
     }
 }

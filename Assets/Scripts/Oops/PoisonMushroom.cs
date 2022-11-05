@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PoisonMushroom : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             gameObject.SetActive(false);
         }
@@ -17,6 +18,13 @@ public class PoisonMushroom : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider)
     {
         gameObject.SetActive(false);
-        player.GetComponent<PlayerMovement>().isAlive = false;
+        if(bario.GetComponent<PlayerMovement>().active)
+        {
+            bario.GetComponent<PlayerMovement>().isAlive = false;
+        }
+        else
+        {
+            ruigi.GetComponent<PlayerMovement>().isAlive = false;
+        }
     }
 }

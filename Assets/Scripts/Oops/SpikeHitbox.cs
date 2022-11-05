@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class SpikeHitbox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public SpriteRenderer Spikes;
     public bool triggered = true;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {
@@ -25,8 +26,15 @@ public class SpikeHitbox : MonoBehaviour
     {
         if(collider.tag == "Player")
         {
-            player.GetComponent<PlayerMovement>().isAlive = false;
             Spikes.enabled = true;
+            if(bario.GetComponent<PlayerMovement>().active)
+            {
+                bario.GetComponent<PlayerMovement>().isAlive = false;
+            }
+            else
+            {
+                ruigi.GetComponent<PlayerMovement>().isAlive = false;
+            }
         }
     }
 

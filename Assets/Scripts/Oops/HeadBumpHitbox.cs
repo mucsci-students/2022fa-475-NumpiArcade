@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class HeadBumpHitbox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public GameObject noBumpHitbox;
     public bool triggered = true;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {

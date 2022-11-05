@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public bool triggered = true;
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             if(triggered)
             {
@@ -22,7 +23,14 @@ public class KillPlayer : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        player.GetComponent<PlayerMovement>().isAlive = false;
+        if(bario.GetComponent<PlayerMovement>().active)
+        {
+            bario.GetComponent<PlayerMovement>().isAlive = false;
+        }
+        else
+        {
+            ruigi.GetComponent<PlayerMovement>().isAlive = false;
+        }
     }
 
     IEnumerator KillReset(float delayTime)

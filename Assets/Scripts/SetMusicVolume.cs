@@ -11,6 +11,7 @@ public class SetMusicVolume : MonoBehaviour
 
     void Start()
     {
+        AudioListener.pause = false;
         if(PlayerPrefs.HasKey("MusicSliderValue"))
         {
             slider.value = PlayerPrefs.GetFloat("MusicSliderValue");
