@@ -5,8 +5,9 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public bool isPlayerGoal;
+    public AudioSource sound;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
@@ -20,6 +21,7 @@ public class Goal : MonoBehaviour
                 Debug.Log("AI Scored...");
                 GameObject.Find("GameManager").GetComponent<GameManager>().AIScored();
             }
+            sound.Play();
         }
     }
 }

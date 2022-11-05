@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
     private int playerScore;
     private int aiScore;
 
+    public string scene;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.R))
@@ -32,6 +35,18 @@ public class GameManager : MonoBehaviour
             aiScore = 0;
             aiText.GetComponent<TextMeshProUGUI>().text = aiScore.ToString();
             ResetPosition();
+        }
+        if (playerScore == 3)
+        {
+            SceneManager.LoadScene(scene);
+            aiScore = 0;
+            playerScore = 0;
+        }
+        if (aiScore == 3)
+        {
+            SceneManager.LoadScene("MainMenu");
+            aiScore = 0;
+            playerScore = 0;
         }
     }
 

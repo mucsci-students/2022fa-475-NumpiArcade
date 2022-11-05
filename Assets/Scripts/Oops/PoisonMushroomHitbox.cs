@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PoisonMushroomHitbox : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject bario;
+    public GameObject ruigi;
     public bool triggered = false;
     public SpriteRenderer block;
     public Sprite oldBlock;
@@ -12,7 +13,7 @@ public class PoisonMushroomHitbox : MonoBehaviour
 
     void Update()
     {
-        if(!player.GetComponent<PlayerMovement>().isAlive)
+        if(!bario.GetComponent<PlayerMovement>().isAlive || !ruigi.GetComponent<PlayerMovement>().isAlive)
         {
             triggered = false;
             block.sprite = oldBlock;
