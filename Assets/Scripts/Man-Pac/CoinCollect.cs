@@ -12,7 +12,7 @@ public class CoinCollect : MonoBehaviour
 
         void OnTriggerEnter2D(Collider2D coin) 
         { 
-        if(collidedWith.tag == coin.tag){
+        if(coin.tag == "Player"){
                 collected += 1;
                 score += 100;
                 Destroy(gameObject);
