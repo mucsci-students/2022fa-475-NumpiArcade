@@ -8,7 +8,6 @@ public class keeps : MonoBehaviour
     public static int deaths = 0;
     public static int lives = 3;
     public static int Score = 0;
-    public int completion = 0;
     
 
 

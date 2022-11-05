@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraRising : MonoBehaviour
 {
-     public float speed = .0005f;
+     public float speed = 1;
 
     void Start()
     {
