@@ -9,14 +9,13 @@ public class CoinCollect : MonoBehaviour
     public int winCondition;
     public static int score = 0;
     
-    
-
-        void OnTriggerEnter2D(Collider2D coin) 
-        { 
-        if(coin.tag == "Player"){
-                collected += 1;
-                score += 100;
-                Destroy(gameObject);
+    void OnTriggerEnter2D(Collider2D coin) 
+    { 
+        if(coin.tag == "Player")
+        {
+            collected += 1;
+            score += 100;
+            Destroy(gameObject);
         }
     }
 }

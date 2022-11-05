@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public GameObject playerText;
     public GameObject aiText;
 
+    // Timer
+    public GameObject timer;
+
     private int playerScore;
     private int aiScore;
 
@@ -28,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             playerScore = 0;
             playerText.GetComponent<TextMeshProUGUI>().text = playerScore.ToString();
@@ -38,9 +41,20 @@ public class GameManager : MonoBehaviour
         }
         if (playerScore == 3)
         {
-            SceneManager.LoadScene(scene);
-            aiScore = 0;
-            playerScore = 0;
+            if(scene == "PingLevel2" || scene == "PingLevel3")
+            {
+                SceneManager.LoadScene(scene);
+                aiScore = 0;
+                playerScore = 0;
+            }
+            else
+            {
+                timer.GetComponent<PingTimer>().beatGame = true;
+                timer.GetComponent<PingTimer>().WinDisplay();
+                aiScore = 0;
+                playerScore = 0;
+                Time.timeScale = 0.0f;
+            }
         }
         if (aiScore == 3)
         {

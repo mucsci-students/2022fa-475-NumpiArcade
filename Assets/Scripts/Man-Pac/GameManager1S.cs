@@ -9,7 +9,7 @@ public class GameManager1S : MonoBehaviour
 {
     public int winCondition = 0;
 
-    public string toLoad ="";
+    public string toLoad = "";
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,6 @@ public class GameManager1S : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(CoinCollect.collected);
         win();
     }
 
