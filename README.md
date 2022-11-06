@@ -1,5 +1,10 @@
 # 2022fa-475-NumpiArcade
-A retro arcade where you can choose between our own renditions of Mario(Oops! I tripped), Pac-Man(Man-Pac), and Pong(Ping)
+A retro arcade where you can choose between our own renditions of Mario (Oops! I tripped), Pac-Man (Man-Pac), and Pong (Ping).
+
+### Developers 
+- Brandon Baldwin
+- Ryan Menow
+- Jon Brennan
 
 ## Downloading
 1. Run the command below in a terminal
@@ -40,10 +45,11 @@ D -- Move Left
 ```
 W -- Move Up
 S -- Move Down
+R -- Restart
 Esc -- Pause
 ```
 
-###Credits
+### Credits
 ```
 Music From:
 Bensound.com/royalty-free-music
@@ -58,8 +64,3 @@ Featured Songs:
 (Ping - Level 2) All That by Benjamin Tissot
 (Ping - Level 3) Ethernight Club by Kevin MacLeod
 ```
-
-### Developers 
-- Brandon Baldwin
-- Ryan Menow
-- Jon Brennan
