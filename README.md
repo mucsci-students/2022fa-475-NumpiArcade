@@ -7,7 +7,7 @@ A retro arcade where you can choose between our own renditions of Mario(Oops! I 
 git clone https://github.com/mucsci-students/2022fa-475-NumpiArcade.git
 ```
 
-### Windows
+### Windows OS
 1. Navigate the WindowsBuild folder inside the game's main directory 
 ```
 cd 2022fa-475-GetUp/2022fa-475-NumpiArcade
@@ -16,6 +16,9 @@ cd 2022fa-475-GetUp/2022fa-475-NumpiArcade
 ```
 start NumpiArcade.exe
 ```
+
+### Mac OS (TODO)
+1. Buy a Windows machine.
 
 ## Controls
 - Oops I Tripped
@@ -33,7 +36,7 @@ A -- Move Left
 S -- Move Down
 D -- Move Left
 ```
-- Pong
+- Ping
 ```
 W -- Move Up
 S -- Move Down
