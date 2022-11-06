@@ -118,27 +118,37 @@ public class Timer : MonoBehaviour
 
     public void WinDisplay()
     {
-        inputScreen.SetActive(true);
         timeTaken = 600.0f - timeValue;
         if(timeTaken < PlayerPrefs.GetFloat("OopsHigh1"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 1st");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("OopsHigh2"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 2nd");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("OopsHigh3"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 3rd");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("OopsHigh4"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 4th");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("OopsHigh5"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 5th");
+        }
+        else
+        {
+            timeTaken = 0.0f;
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

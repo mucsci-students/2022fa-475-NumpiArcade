@@ -74,26 +74,36 @@ public class PingTimer : MonoBehaviour
 
     public void WinDisplay()
     {
-        inputScreen.SetActive(true);
         if(timeTaken < PlayerPrefs.GetFloat("PingHigh1"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 1st");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("PingHigh2"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 2nd");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("PingHigh3"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 3rd");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("PingHigh4"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 4th");
         }
         else if(timeTaken < PlayerPrefs.GetFloat("PingHigh5"))
         {
+            inputScreen.SetActive(true);
             placementText.SetText("You Placed 5th");
+        }
+        else
+        {
+            timeTaken = 0.0f;
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
