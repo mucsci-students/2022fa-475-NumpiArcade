@@ -32,7 +32,7 @@ public class HighScoreInitializer : MonoBehaviour
         if(!PlayerPrefs.HasKey("HasHighScores"))
         {
             PlayerPrefs.SetInt("HasHighScores", 1);
-            PlayerPrefs.SetFloat("OopsHigh1", 59.291f);
+            PlayerPrefs.SetFloat("OopsHigh1", 58.717f);
             PlayerPrefs.SetFloat("OopsHigh2", 599.999f);
             PlayerPrefs.SetFloat("OopsHigh3", 599.999f);
             PlayerPrefs.SetFloat("OopsHigh4", 599.999f);
