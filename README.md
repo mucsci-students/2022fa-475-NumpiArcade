@@ -62,3 +62,8 @@ Featured Songs:
 (Ping - Level 2) All That by Benjamin Tissot
 (Ping - Level 3) Ethernight Club by Kevin MacLeod
 ```
+
+### Extras
+```
+Look out for an easter egg in Oops, I Tripped!
+```
