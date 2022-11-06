@@ -7,7 +7,7 @@ A retro arcade where you can choose between our own renditions of Mario (Oops! I
 - Jon Brennan
 
 ## Downloading
-1. Run the command below in a terminal
+Click on the green "Code" button, and download and extract the ZIP file, or run the following command below in a terminal
 ```
 git clone https://github.com/mucsci-students/2022fa-475-NumpiArcade.git
 ```
