@@ -1,10 +1,10 @@
 # 2022fa-475-NumpiArcade
-A retro arcade where you can choose between our own renditions of Mario (Oops! I tripped), Pac-Man (Man-Pac), and Pong (Ping).
+A retro arcade where you can choose between our own renditions of Mario (Oops! I tripped), Pac-Man (Man-Pac), and Pong (Ping) made respectively by the developers below.
 
 ### Developers 
 - Brandon Baldwin
-- Ryan Menow
 - Jon Brennan
+- Ryan Menow
 
 ## Downloading
 Click on the green "Code" button, and download and extract the ZIP file, or run the following command below in a terminal
@@ -26,7 +26,7 @@ start NumpiArcade.exe
 1. Buy a Windows machine.
 
 ## Controls
-- Oops I Tripped
+- Oops, I Tripped
 ```
 A -- Move Left
 D -- Move Right
@@ -40,7 +40,7 @@ Esc -- Pause
 W -- Move Forward
 A -- Move Left
 S -- Move Down
-D -- Move Left
+D -- Move Right
 ```
 - Ping
 ```
