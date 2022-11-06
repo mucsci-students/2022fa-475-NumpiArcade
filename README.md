@@ -29,10 +29,11 @@ start NumpiArcade.exe
 - Oops I Tripped
 ```
 A -- Move Left
-S -- Move Right
+D -- Move Right
+S -- Down Pipes
+Spacebar -- Jump
 R -- Restart
 Esc -- Pause
-Spacebar -- Jump
 ```
 - Man-Pac
 ```
