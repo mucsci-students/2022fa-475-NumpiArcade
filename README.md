@@ -31,7 +31,7 @@ start NumpiArcade.exe
 A -- Move Left
 D -- Move Right
 S -- Down Pipes
-Spacebar -- Jump
+Space -- Jump
 R -- Restart
 Esc -- Pause
 ```
