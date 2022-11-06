@@ -13,12 +13,12 @@ https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share
 ### Windows
 1. Navigate to the Windows folder inside the NumPi_Arcade folder
 
-2. Run the executable named Numpi_Arcade.exe
+2. Run the executable named Numpi Arcade.exe
 
 ### macOS
 1. Navigate to the macOS folder inside the NumPi_Arcade folder
 
-2. Run the NumPi_Arcade.app file
+2. Run the macOS.app file
 
 
 ## Controls
