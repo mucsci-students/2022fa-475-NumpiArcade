@@ -43,6 +43,22 @@ S -- Move Down
 Esc -- Pause
 ```
 
+###Credits
+```
+Music From:
+Bensound.com/royalty-free-music
+
+"Ethernight Club"
+Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 3.0
+http://creativecommons.org/licenses/by/3.0/
+
+
+Featured Songs:
+(Ping - Level 2) All That by Benjamin Tissot
+(Ping - Level 3) Ethernight Club by Kevin MacLeod
+```
+
 ### Developers 
 - Brandon Baldwin
 - Ryan Menow
