@@ -7,23 +7,18 @@ A retro arcade where you can choose between our own renditions of Mario (Oops! I
 - Ryan Menow
 
 ## Downloading
-Click on the green "Code" button, and download and extract the ZIP file, or run the following command below in a terminal
-```
-git clone https://github.com/mucsci-students/2022fa-475-NumpiArcade.git
-```
+Download and extract files from this link, gives both windows and mac build
+https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share_link
 
 ### Windows OS
-1. Navigate the WindowsBuild folder inside the game's main directory 
-```
-cd 2022fa-475-GetUp/2022fa-475-NumpiArcade
-```
+1. Navigate to the Windows folder inside the NumPi Arcade folder
+
 2. Run the executable named NumpiArcade.exe
-```
-start NumpiArcade.exe
-```
 
 ### Mac OS (TODO)
-1. Buy a Windows machine.
+1. Navigate to the macOS folder inside the NumPi Arcade folder
+
+2. Run the macOS.app file
 
 ## Controls
 - Oops, I Tripped
