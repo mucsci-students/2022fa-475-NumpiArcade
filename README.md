@@ -6,26 +6,23 @@ A retro arcade where you can choose between our own renditions of Mario (Oops! I
 - Jon Brennan
 - Ryan Menow
 
-## Downloading
-Download and extract files from this link, gives both windows and mac build
-https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share_link
+#### Downloading
 
 ### Windows
-1. Navigate to the Windows folder inside the Builds folder
+1. Download and extract files from this link
+https://drive.google.com/drive/folders/1cCzWMr5eWVPzoxBNmMSgXc1tQXFl5SOv?usp=share_link
 
-2. Run the executable named Numpi Arcade.exe
+2. Navigate into the Windows folder
+
+3. Run the executable named "Numpi Arcade.exe"
 
 ### macOS
-1. Open a terminal session and navigate to the folder where you downloaded it. Run this command to set the executable permissions: 
-```
-chmod a+x Builds/macOS/macOS.app/Contents/MacOS/*
-```
+1. Download and extract files from this link
+https://drive.google.com/drive/folders/13ncWcmrUzghzlyx2_851-yCwFlQj0WvR?usp=share_link
 
-2. Double click to try and open. Mac will give you a security error.
+2. Navigate into the macOS folder
 
-3. Navigate to System Preferences > Security and Privacy > General tab. 
-
-4. At the bottom there should be a button for an app you tried to recently open, "macOS". Click run anyways.
+3. Run the application named "macOS.app"
 
 
 ## Controls
