@@ -7,7 +7,7 @@ A retro arcade where you can choose between our own renditions of Mario (Oops! I
 - Ryan Menow
 
 ### Download
-Download zip files from this link and extract all, it will give you both mac and window builds
+Download zip file from this link and extract all, it will give you both mac and window builds
 https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share_link
 
 ### Windows
