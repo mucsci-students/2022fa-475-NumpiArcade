@@ -6,9 +6,7 @@ A retro arcade where you can choose between our own renditions of Mario (Oops! I
 - Jon Brennan
 - Ryan Menow
 
-### Downloading
-
-## Windows
+### Windows
 1. Download and extract files from this link
 https://drive.google.com/drive/folders/1cCzWMr5eWVPzoxBNmMSgXc1tQXFl5SOv?usp=share_link
 
@@ -16,7 +14,7 @@ https://drive.google.com/drive/folders/1cCzWMr5eWVPzoxBNmMSgXc1tQXFl5SOv?usp=sha
 
 3. Run the executable named "Numpi Arcade.exe"
 
-## macOS
+### macOS
 1. Download and extract files from this link
 https://drive.google.com/drive/folders/13ncWcmrUzghzlyx2_851-yCwFlQj0WvR?usp=share_link
 
@@ -25,7 +23,7 @@ https://drive.google.com/drive/folders/13ncWcmrUzghzlyx2_851-yCwFlQj0WvR?usp=sha
 3. Run the application named "macOS.app"
 
 
-## Controls
+### Controls
 - Oops, I Tripped
 ```
 A -- Move Left
