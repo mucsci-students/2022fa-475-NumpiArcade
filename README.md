@@ -13,7 +13,7 @@ https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share
 ### Windows
 1. Navigate into the Windows folder
 
-2. Run the executable named "Numpi Arcade.exe"
+2. Run the executable named "NumPi Arcade.exe"
 
 ### macOS
 1. Navigate into the Windows folder
