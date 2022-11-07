@@ -16,16 +16,16 @@ https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share
 2. Run the executable named Numpi Arcade.exe
 
 ### macOS
-3. Open a terminal session and navigate to the folder where you downloaded it. Run this command to set the executable permissions: 
+1. Open a terminal session and navigate to the folder where you downloaded it. Run this command to set the executable permissions: 
 ```
 chmod a+x Builds/macOS/macOS.app/Contents/MacOS/*
 ```
 
-3. Double click to try and open. Mac will give you a security error.
+2. Double click to try and open. Mac will give you a security error.
 
-4. Navigate to System Preferences > Security and Privacy > General tab. 
+3. Navigate to System Preferences > Security and Privacy > General tab. 
 
-5. At the bottom there should be a button for an app you tried to recently open, "macOS". Click run anyways.
+4. At the bottom there should be a button for an app you tried to recently open, "macOS". Click run anyways.
 
 
 ## Controls
