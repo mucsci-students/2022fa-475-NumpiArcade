@@ -71,6 +71,9 @@ Featured Songs:
 (Ping - Level 2) All That by Benjamin Tissot
 (Ping - Level 3) Ethernight Club by Kevin MacLeod
 ```
+```
+Don't worry, everything is royalty free despite what you may think.
+'''
 
 ### Extras
 ```
