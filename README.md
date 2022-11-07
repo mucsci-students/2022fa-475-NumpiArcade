@@ -73,7 +73,6 @@ Featured Songs:
 ```
 ```
 Don't worry, everything is royalty free despite what you may think.
-'''
 
 ### Extras
 ```
