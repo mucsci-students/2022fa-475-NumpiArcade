@@ -1,5 +1,5 @@
 # 2022fa-475-NumpiArcade
-A retro arcade where you can choose between our own renditions of Mario (Oops! I tripped), Pac-Man (Man-Pac), and Pong (Ping) made respectively by the developers below.
+A retro arcade where you can choose between our own renditions of Mario (Oops, I tripped), Pac-Man (Man-Pac), and Pong (Ping) made respectively by the developers below.
 
 ### Developers 
 - Brandon Baldwin
