@@ -77,5 +77,5 @@ Don't worry, everything is royalty free despite what you may think.
 
 ### Extras
 ```
-Look out for an easter egg in Oops, I Tripped!
+Look out for an easter egg in Oops, I Tripped! Hint, it's in area 2.
 ```
