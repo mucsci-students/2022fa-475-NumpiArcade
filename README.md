@@ -16,7 +16,7 @@ https://drive.google.com/file/d/12_tgi_OUjkQ09TI9Qm70kAcwhzhJhXHW/view?usp=share
 2. Run the executable named "NumPi Arcade.exe"
 
 ### macOS
-1. Navigate into the Windows folder
+1. Navigate into the macOS folder
 
 2. You will see an application named "macOS.app". This is what you will try to run later in step 4.
 
